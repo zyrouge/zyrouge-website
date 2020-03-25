@@ -59,6 +59,37 @@ body {
     max-width: 70%;
 }
 
+.card {
+    box-sizing: border-box;
+    background-color: #23272A;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 6px;
+    display: inline-block;
+}
+
+#card .title {
+    text-decoration: none;
+    color: #FFF;
+}
+
+#card .link {
+    box-sizing: border-box;
+    background-color: #2C2F33;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 4px;
+    color: #7289DA;
+    box-shadow: 1px 1px rgba(114, 137, 218, 0.5);
+    display: inline;
+}
+
+#card .info {
+    max-width: 50%;
+}
+
 .footer {
     color: #FFF;
     background-color: #23272A;
