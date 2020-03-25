@@ -10,6 +10,13 @@
 </head>
 <body>
     <link rel="stylesheet" href="/stylesheet.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <div id="overlay" style="display:none;"><div class="spinner"></div><br>Loading...</div>
+    <script>
+        $(document).ready(function() {
+            $('#overlay').fadeIn().delay(2000).fadeOut();
+        });
+    </script>
     <div class="navbar">
         <ul>
             <li><a href="/"><img src="/navbar-logo.png" alt="Logo"></a></li>
