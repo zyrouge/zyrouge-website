@@ -65,10 +65,22 @@ body {
     width: 100%;
 }
 
+.footer #wrapper {
+    display: flex;
+}
+
+.footer #links {
+    padding-top: 20px;
+    width: 50%;
+}
+
+.footer #social {
+    padding-top: 20px;
+    width: 50%;
+}
+
 .footer ul {
     list-style-type: none;
-    padding-top: 20px;
-    padding-bottom: 20px;
 }
 
 .footer li {
@@ -77,7 +89,6 @@ body {
     padding-right: 10px;
     vertical-align: middle;
     padding-top: 8px;
-    padding-bottom: 8px;
 }
 
 .footer a {
@@ -87,6 +98,11 @@ body {
 
 .footer a:hover {
     text-decoration: underline;
+}
+
+.copyright {
+    text-align: center;
+    padding-bottom: 20px;
 }
 
 @media only screen and (max-width: 450px) {
