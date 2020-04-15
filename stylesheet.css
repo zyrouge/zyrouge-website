@@ -100,22 +100,26 @@ body {
 .footer {
     color: #FFF;
     background-color: #23272A;
+    padding-bottom: 20px;
     width: 100%;
 }
 
 .footer #wrapper {
     display: flex;
+    padding-bottom: 20px;
 }
 
 .footer #links {
-    padding-left: 20%;
     padding-top: 20px;
-    width: 40%;
+    width: 50%;
+    text-align: right;
+    margin-right: 10px;
 }
 
 .footer #social {
     padding-top: 20px;
     padding-right: 20%;
+    margin-left: 10px;
 }
 
 .footer ul {
