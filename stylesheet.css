@@ -89,6 +89,7 @@ body {
     color: #7289DA;
     box-shadow: 1px 1px rgba(114, 137, 218, 0.5);
     display: inline;
+    margin: 0 20px;
 }
 
 #card .info {
