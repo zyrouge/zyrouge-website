@@ -1,7 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Sen');
 
-body {
+* {
+    padding: 0;
+    margin: 0;
     font-family: 'Sen';
+}
+
+body {
     background-color: #2C2F33;
 }
 
@@ -87,6 +92,7 @@ body {
 }
 
 #card .info {
+    margin: 5px;
     max-width: 50%;
 }
 
