@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Montserrat;
+}
+
+body {
+  background-color: #04000f;
+}
+
+:root {
+  --mainblue: #3500d3;
+}
+
+nav {
+  /* display: none; */
+  animation: ease-in-out 3s topLevel;
+}
+
+.navbar {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  vertical-align: middle;
+  font-size: 17px;
+  font-weight: bold;
+  padding: 10px 20px;
+  background: linear-gradient(to bottom, rgba(53, 0, 211, 0.2), transparent);
+  background-color: transparent;
+  transition: 1s;
+}
+
+.navbar:hover {
+  background-color: rgba(53, 0, 211, 0.2);
+}
+
+nav img {
+  height: 40px;
+  cursor: pointer;
+}
+
+nav .links {
+  float: left;
+  margin-left: auto;
+}
+
+nav .links a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+  padding: 0 10px;
+}
+
+nav .links a:hover {
+  text-shadow: 2px 2px 1px var(--mainblue);
+}
+
+main {
+  color: white;
+  width: 100%;
+}
+
+.container {
+  /* display: none; */
+  animation: ease-in-out 3s topLevel;
+  padding-top: 30px;
+  width: 90%;
+}
+
+h1 {
+  color: var(--mainblue);
+  padding-bottom: 12px;
+}
+
+.content {
+  /* display: none; */
+  margin: 30px 0px;
+  padding-left: 10px;
+  border: 1px solid transparent;
+  transition: 0.5s;
+}
+
+.content h1 {
+  transition: ease-in-out 0.5s;
+}
+
+.content:hover {
+  border: 1px solid rgba(53, 0, 211, 0.2);
+  background-color: rgba(53, 0, 211, 0.05);
+}
+
+.content.whoami {
+  animation: ease-in-out 5s topLevel;
+}
+
+.content.projects {
+  animation: ease-in-out 7s topLevel;
+}
+
+.content.links {
+  animation: ease-in-out 9s topLevel;
+}
+
+.content:hover h1 {
+  color: rgb(61, 11, 212);
+}
+
+@media (min-width: 600px) {
+  .container {
+    width: 70%;
+  }
+}
+
+.box {
+  width: 80%;
+  background-color: rgba(53, 0, 211, 0.1);
+  border-radius: 5px;
+  padding: 20px;
+  transition: 0.5s;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.box a {
+  color: white;
+  text-decoration: none;
+}
+
+.box p {
+  padding-top: 10px;
+}
+
+.box:hover {
+  transform: translateY(-5px);
+  background-color: rgba(53, 0, 211, 0.2);
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+  background-color: rgba(53, 0, 211, 0.05);
+  color: rgb(61, 11, 212);
+  font-weight: bold;
+  animation: ease-in-out 10s topLevel;
+}
+
+footer::after {
+  content: "ZYROUGE © 2020";
+}
+
+@keyframes topLevel {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  70% {
+    transform: translateY(0px);
+  }
+  100% {
+    opacity: 1;
+  }
+}

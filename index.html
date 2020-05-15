@@ -1,55 +1,108 @@
 <!DOCTYPE html>
-<head>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ZYROUGE</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="og:title" content="ZYROUGE"/>
-    <meta name="og:url" content="http://www.zyrouge.gq/"/>
-    <meta name="og:email" content="me@zyrouge.gq"/>
-    <meta name="description" content="A Site about Me."/>
-    <link rel="shortcut icon" type="image/png" href="/navbar-logo.png" />
-    <meta name="author" content="ZYROUGE">
-    <meta name="og:site_name" content="ZYROUGE"/>
-    <meta name="og:image" content="/logo.png" />
-    <meta name="theme-color" content="#7289DA">
-</head>
-<body>
-    <link rel="stylesheet" href="/stylesheet.css">
-    <div class="navbar">
-        <ul>
-            <li><a href="/"><img src="/navbar-logo.png" alt="Logo"></a></li>
-            <li><a href="/">Home</a></li>
-            <li><a href="/services.html">Services</a></li>
-        </ul>
-    </div>
-    <div class="container">
-        <center>
-            <img src="/logo.png" class="logo" alt="Logo" width="50%"><br>
-            <h1>ZYROUGE</h1><br>
-            <h5>Who am I?</h5>
-            <p class="bio">
-                I am a 15 year guy who loves programming with NodeJS and HTML.
-                I love creating Interesting and Innovative things.
-                I love hearing to Music and making Discord Bots.
-                My dream is to become a Software Developer.
-            </p>
-        </center>
-    </div>
-    <div class="footer" id="footer">
-        <div id="wrapper">
-            <ul id="links">
-                <li><strong></span><u>Links</u></strong></li>
-                <li><a href="/">Home <img src="/home-solid.svg" style="height: 15px; filter: invert();"></a></li>
-                <li><a href="/services.html">Services <img src="/clipboard-check-solid.svg" style="height: 15px; filter: invert();"></a></li>
-                <li><a href="/patreon">Patreon <img src="/patreon-brands.svg" style="height: 15px; filter: invert();"></a></li>
-            </ul>
-            <ul id="social">
-                <li><strong><u>Social</u></strong></li>
-                <li><a href="/discord"><img src="/discord-brands.svg" style="height: 15px; filter: invert();"> Discord</a></li>
-                <li><a href="https://github.com/zyrouge"><img src="/github-brands.svg" style="height: 15px; filter: invert();"> GitHub</a></li>
-                <li><a href="https://instagram.com/_zyrouge_"><img src="/instagram-brands.svg" style="height: 15px; filter: invert();"> Instagram</a></li>
-            </ul>
+    <link rel="stylesheet" href="main.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav>
+      <div class="navbar">
+        <div class="logo">
+          <a href="/">
+            <img src="https://zyrouge.gq/navbar-logo.png" alt="Logo"
+          /></a>
         </div>
-        <p class="copyright">&copy; ZYROUGE 2019</p>
-    </div>
-</body>
+        <div class="links">
+          <div class="link">
+            <a href="#projects">Projects</a>
+            <a href="#social">Social</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <center>
+        <div class="container">
+          <div class="content whoami" id="whoami">
+            <h1>Who am I?</h1>
+            <h4>Hi! I am Zyrouge. A 16 year old who likes Programming.</h4>
+          </div>
+          <div class="content projects" id="projects">
+            <h1>Projects</h1>
+            <div class="box">
+              <a
+                href="https://npmjs.com/genius-lyrics"
+                target="_blank"
+                class="genius"
+              >
+                <h3>Genius Lyrics</h3>
+                <p>
+                  NPM Package that fetches Genius API and scrapes the Lyrics.
+                </p>
+              </a>
+            </div>
+            <div class="box">
+              <a href="https://api.zyrouge.gq" target="_blank" class="api">
+                <h3>API</h3>
+                <p>
+                  An High Standard API with many features and some Image
+                  Manipulation.
+                </p>
+              </a>
+            </div>
+            <div class="box">
+              <a
+                href="https://github.com/zyrouge"
+                target="_blank"
+                class="github"
+              >
+                <h3>GitHub</h3>
+                <p>
+                  In meantime I make public projects.
+                </p>
+              </a>
+            </div>
+          </div>
+          <div class="content links" id="links">
+            <h1>Social Media</h1>
+            <div class="box">
+              <a
+                href="https://zyrouge.gq/discord"
+                target="_blank"
+                class="discord"
+              >
+                <h3>Discord</h3>
+                <p>
+                  My Discord Server!
+                </p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </center>
+    </main>
+    <footer></footer>
+  </body>
+  <script>
+    // $(document).ready(() => {
+    //   $("nav").fadeIn(2000);
+    //   setTimeout(() => {
+    //     $(".container").fadeIn(2000);
+    //     $(".content.whoami").fadeIn(2000);
+    //     setTimeout(() => {
+    //       $(".content.projects").fadeIn(2000);
+    //       setTimeout(() => {
+    //         $(".content.links").fadeIn(2000);
+    //       }, 1000);
+    //     }, 1000);
+    //   }, 1000);
+    // });
+  </script>
 </html>

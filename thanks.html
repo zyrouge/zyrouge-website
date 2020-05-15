@@ -1,55 +1,72 @@
 <!DOCTYPE html>
-<head>
+<html>
+  <head>
     <title>ZYROUGE</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="og:title" content="ZYROUGE"/>
-    <meta name="og:url" content="http://www.zyrouge.gq/"/>
-    <meta name="og:email" content="me@zyrouge.gq"/>
-    <meta name="description" content="A Site about Me."/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="og:title" content="ZYROUGE" />
+    <meta name="og:url" content="http://www.zyrouge.gq/" />
+    <meta name="og:email" content="me@zyrouge.gq" />
+    <meta name="description" content="A Site about Me." />
     <link rel="shortcut icon" type="image/png" href="/navbar-logo.png" />
-    <meta name="author" content="ZYROUGE">
-    <meta name="og:site_name" content="ZYROUGE"/>
-    <meta name="og:image" content="/logo.png" />
-    <meta name="theme-color" content="#7289DA">
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-</head>
-<script>
-    let params = (new URL(location)).searchParams;
-    $(document).ready(function() {
-        $("p").text(`${params.get("q") || "Thanks for your Support!"}`);
+    <meta name="author" content="ZYROUGE" />
+    <meta name="og:site_name" content="ZYROUGE" />
+    <meta name="og:image" content="/hero.png" />
+    <meta name="theme-color" content="#7289DA" />
+    <link rel="stylesheet" href="/main.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <script>
+    let params = new URL(location).searchParams;
+    $(document).ready(function () {
+      $("p").text(`${params.get("q") || "Thanks for your Support!"}`);
     });
-</script>
-<body>
-    <link rel="stylesheet" href="/stylesheet.css">
-    <div class="navbar">
-        <ul>
-            <li><a href="/"><img src="/navbar-logo.png" alt="Logo"></a></li>
-            <li><a href="/">Home</a></li>
-            <li><a href="/services.html">Services</a></li>
-        </ul>
-    </div>
-    <div class="container">
-        <center>
-            <div class="heart"><3</div>
-            <p class="heart-text">Thanks for Adding Server Stats Bot to your Server!</p>
-        </center>
-    </div>
-    <div class="footer" id="footer">
-        <div id="wrapper">
-            <ul id="links">
-                <li><strong></span><u>Links</u></strong></li>
-                <li><a href="/">Home <img src="/home-solid.svg" style="height: 15px; filter: invert();"></a></li>
-                <li><a href="/services.html">Services <img src="/clipboard-check-solid.svg" style="height: 15px; filter: invert();"></a></li>
-                <li><a href="/patreon">Patreon <img src="/patreon-brands.svg" style="height: 15px; filter: invert();"></a></li>
-            </ul>
-            <ul id="social">
-                <li><strong><u>Social</u></strong></li>
-                <li><a href="/discord"><img src="/discord-brands.svg" style="height: 15px; filter: invert();"> Discord</a></li>
-                <li><a href="https://github.com/zyrouge"><img src="/github-brands.svg" style="height: 15px; filter: invert();"> GitHub</a></li>
-                <li><a href="https://instagram.com/_zyrouge_"><img src="/instagram-brands.svg" style="height: 15px; filter: invert();"> Instagram</a></li>
-            </ul>
+  </script>
+  <body>
+    <nav>
+      <div class="navbar">
+        <div class="logo">
+          <a href="/">
+            <img src="https://zyrouge.gq/navbar-logo.png" alt="Logo"
+          /></a>
         </div>
-        <p class="copyright">&copy; ZYROUGE 2019</p>
-    </div>
-</body>
+        <div class="links">
+          <div class="link">
+            <a href="#projects">Projects</a>
+            <a href="#social">Social</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <center>
+      <div class="thanks">
+        <h1><3</h1>
+        <p>Thanks You!</p>
+      </div>
+    </center>
+    <footer></footer>
+  </body>
+
+  <style scoped>
+    h1 {
+      color: white;
+      font-size: 70px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .thanks {
+      animation: ease-in-out 5s topLevel;
+      padding-top: 25vh;
+      height: 100%;
+    }
+
+    p {
+      color: white;
+      font-size: 23px;
+      /* animation: ; */
+    }
+  </style>
 </html>
