@@ -112,6 +112,10 @@ h1 {
   .container {
     width: 70%;
   }
+
+  .content {
+    padding: 15px;
+  }
 }
 
 .box {
